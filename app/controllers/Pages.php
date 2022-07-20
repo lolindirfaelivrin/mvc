@@ -19,4 +19,12 @@ class Pages extends Controller
     //echo "Index Method";
     $this->view('pagina/index', $data);
   }
+
+  public function about() {
+    $data = [
+      'title' => 'Informazioni su questo sito',
+    ];
+    $this->view('pagina/about', $data);
+  }  
+
 }
